@@ -8,10 +8,10 @@ Required package:
 •	wordcloud
 •	matplotlib
 •	regex
-How to apply api key: 
+|How to apply api key: 
 Go to yelp fusion and follow the instruction:
 https://www.yelp.com/developers/documentation/v3/get_started
-How to interact with my program
+|How to interact with my program
 My program will recommend restaurant for users. 
 Follow the instruction, users could input information about the location, budget and category of food they want. 
 Then the program will return the top 3 rating restaurants match users’ information. 
