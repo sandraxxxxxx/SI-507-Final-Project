@@ -23,13 +23,6 @@ def api_fetch(offs):
     resultd = resultd["businesses"]
     return resultd
 
-def review_fetch(id):
-    mykey = "TZR3-NA_M36tECQaIge2qZTDJH8KwJCWZWd8nbG8PDY4w51TWn8Afm3_MUdkBpQilTrA1CvN72EJi0dDck1OJ9IJtJGGpa1tJPEieoPQ4HgeLiQBVkGb6UVYHixJYnYx"
-    Endpoint = f"https://api.yelp.com/v3/businesses/{id}/reviews"
-    headers = {'Authorization': 'bearer %s' % mykey}
-    response = requests.get(url = Endpoint,  headers = headers)
-    resultd = json.loads(response.text)
-    return resultd
 def getbigdata(offs):
     data = []
     for i in range(offs):
@@ -205,7 +198,7 @@ cn = catname(Yelp_cache(int(1)))
 
 datatree = BinarySearchTree()
 #print(Yelp_cache(int(20)))
-ok = createtree(datatree, Yelp_cache(int(2)))
+ok = createtree(datatree, Yelp_cache(int(20)))
 #print(ok.get(['Detroit', '$$', 'ramen']))
 #print(ok.length())
 #print(ok.root.Yname)
